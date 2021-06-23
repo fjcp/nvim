@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
     use 'tjdevries/colorbuddy.nvim'
     use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons', config = "require'bufferline'.setup{}"}
     use {'glepnir/galaxyline.nvim', branch = 'main'}
-    use 'glepnir/dashboard-nvim'
+    use 'mhinz/vim-startify'
 
     -- Tree-Sitter
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
@@ -53,7 +53,7 @@ return require('packer').startup(function(use)
 
     -- Other
     use {'terrortylor/nvim-comment', config = "require('nvim_comment').setup()"}
-    use 'monaqa/dial.nvim'
     use 'lukas-reineke/format.nvim'
+    use 'folke/which-key.nvim'
 
 end)

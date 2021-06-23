@@ -34,5 +34,4 @@ require('telescope-config')
 require('nvimtree-config')
 
 -- Other
-require('dial-config')
 require('formatting')
