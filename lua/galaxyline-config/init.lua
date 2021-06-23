@@ -56,24 +56,13 @@ gls.left[1] = {
 }
 
 gls.left[2] = {
-    NameText = {
-        provider = function()
-            return 'VapourNvim '
-        end,
-        highlight = {colors.white, colors.black, 'bold'},
-        separator = separators.bRight,
-        separator_highlight = {colors.lightbg, colors.black}
-    }
-}
-
-gls.left[3] = {
     FileIcon = {
         provider = 'FileIcon',
         condition = buffer_not_empty,
         highlight = {require('galaxyline.provider_fileinfo').get_file_icon_color, colors.lightbg}
     }
 }
-gls.left[4] = {
+gls.left[3] = {
     FileName = {
         provider = 'FileName',
         condition = buffer_not_empty,
@@ -83,11 +72,11 @@ gls.left[4] = {
     }
 }
 
-gls.left[5] = {DiagnosticError = {provider = 'DiagnosticError', icon = '  ', highlight = {colors.red, colors.black}}}
+gls.left[4] = {DiagnosticError = {provider = 'DiagnosticError', icon = '  ', highlight = {colors.red, colors.black}}}
 
-gls.left[6] = {DiagnosticWarn = {provider = 'DiagnosticWarn', icon = '  ', highlight = {colors.yellow, colors.black}}}
+gls.left[5] = {DiagnosticWarn = {provider = 'DiagnosticWarn', icon = '  ', highlight = {colors.yellow, colors.black}}}
 
-gls.left[7] = {DiagnosticInfo = {provider = 'DiagnosticInfo', icon = '  ', highlight = {colors.blue, colors.black}}}
+gls.left[6] = {DiagnosticInfo = {provider = 'DiagnosticInfo', icon = '  ', highlight = {colors.blue, colors.black}}}
 
 -- Git stuff on the right side
 
