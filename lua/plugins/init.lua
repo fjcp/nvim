@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
     use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons', config = "require'bufferline'.setup{}"}
     use {'glepnir/galaxyline.nvim', branch = 'main'}
     use 'mhinz/vim-startify'
+    use 'RRethy/vim-illuminate'
 
     -- Tree-Sitter
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
@@ -55,5 +56,7 @@ return require('packer').startup(function(use)
     use {'terrortylor/nvim-comment', config = "require('nvim_comment').setup()"}
     use 'lukas-reineke/format.nvim'
     use 'folke/which-key.nvim'
+    use 'skywind3000/asyncrun.vim'
+    use {'kkoomen/vim-doge', run = ':call doge#install()'}
 
 end)
