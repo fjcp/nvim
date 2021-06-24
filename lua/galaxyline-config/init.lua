@@ -47,10 +47,11 @@ end
 gls.left[1] = {
     ViMode = {
         provider = function()
-            local mode_color = {n = colors.white, i = colors.green, s = colors.green, v = colors.blue, V = colors.blue, [''] = colors.yellow, c = colors.purple, R = colors.blue}
+            local mode_color = {n = colors.white, i = colors.green, s = colors.green, t = colors.green, v = colors.blue, V = colors.blue, [''] = colors.yellow, c = colors.purple, R = colors.blue}
 
             vim.api.nvim_command('hi GalaxyViMode guifg=' .. mode_color[vim.fn.mode()])
             return '   '
+        --     return vim.fn.mode()
         end,
         highlight = {colors.white, colors.black, 'bold'}
     }
