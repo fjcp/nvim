@@ -33,11 +33,14 @@ vim.api.nvim_set_keymap('v', '<Leader>/', ':CommentToggle<CR>', {noremap = true,
 vim.api.nvim_set_keymap('n', '<Leader>r', ':Telescope live_grep<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>f', ':Telescope find_files<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>b', ':Telescope buffers<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>g', ':Telescope git_files<CR>', {noremap = true, silent = true})
 
 vim.api.nvim_set_keymap('n', 's', ":HopChar2<CR>", {silent = true})
 vim.api.nvim_set_keymap('n', 'S', ":HopWord<CR>", {silent = true})
 
 vim.api.nvim_set_keymap('n', '<Leader>t', ":ToggleTerm<CR>", {silent = true})
+
+vim.cmd('tnoremap <Esc> <C-\\><C-n>')
 
 vim.cmd('inoremap <expr> <c-j> (\"\\<C-n>\")')
 vim.cmd('inoremap <expr> <c-k> (\"\\<C-p>\")')

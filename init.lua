@@ -13,17 +13,17 @@ require('options')
 require('keybindings')
 
 -- Syntax and Visual
-require('colorscheme.onedark')
+require('colorscheme.gruvbox')
 require('treesitter-config')
 require('colorizer-config')
 require('galaxyline-config')
-require('dashboard-config')
+--require('dashboard-config')
 
 -- LSP and Autocomplete
 require('compe-config')
 require('autopairs-config')
 require('language-servers')
-require('lazygit-config')
+--require('lazygit-config')
 require('gitsigns-config')
 
 -- Terminal Support
