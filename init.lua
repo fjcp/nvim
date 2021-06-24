@@ -27,7 +27,7 @@ require('language-servers')
 require('gitsigns-config')
 
 -- Terminal Support
-require('toggleterm-config')
+--require('toggleterm-config')
 
 -- Navigation
 require('telescope-config')
