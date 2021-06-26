@@ -37,7 +37,7 @@ return require('packer').startup(function(use)
     use 'windwp/nvim-autopairs'
 
     -- Version Control
-    use 'kdheepak/lazygit.nvim'
+--    use 'kdheepak/lazygit.nvim'
     use {'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim', config = "require('neogit').setup {}"}
     use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
 
@@ -58,5 +58,6 @@ return require('packer').startup(function(use)
     use 'folke/which-key.nvim'
     use 'skywind3000/asyncrun.vim'
     use {'kkoomen/vim-doge', run = ':call doge#install()'}
+    use 'rhysd/vim-clang-format'
 
 end)
