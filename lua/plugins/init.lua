@@ -34,6 +34,7 @@ return require('packer').startup(function(use)
     use 'glepnir/lspsaga.nvim'
     use 'hrsh7th/nvim-compe'
     use 'hrsh7th/vim-vsnip'
+    use 'rafamadriz/friendly-snippets'
     use 'windwp/nvim-autopairs'
 
     -- Version Control
