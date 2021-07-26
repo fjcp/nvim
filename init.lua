@@ -16,7 +16,8 @@ require('keybindings')
 require('colorscheme.gruvbox')
 require('treesitter-config')
 require('colorizer-config')
-require('galaxyline-config')
+--require('galaxyline-config')
+require('lualine-config')
 --require('dashboard-config')
 
 -- LSP and Autocomplete

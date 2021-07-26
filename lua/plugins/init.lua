@@ -14,7 +14,8 @@ return require('packer').startup(function(use)
     use 'norcalli/nvim-colorizer.lua'
     use 'tjdevries/colorbuddy.nvim'
     use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons', config = "require'bufferline'.setup{}"}
-    use {'glepnir/galaxyline.nvim', branch = 'main'}
+    use {'hoob3rt/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true} }   
+    --use {'glepnir/galaxyline.nvim', branch = 'main'}
     use 'mhinz/vim-startify'
     use 'RRethy/vim-illuminate'
 
