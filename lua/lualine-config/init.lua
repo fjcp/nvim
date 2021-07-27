@@ -30,14 +30,20 @@ local config = {
   options = {
     icons_enabled = true,
     theme = 'gruvbox',
-    component_separators = {'', ''},
-    section_separators = {'', ''},
+    component_separators = {'', ''},
+    section_separators = {'', ''},
     disabled_filetypes = {}
   },
   sections = {
     -- these are to remove the defaults
     lualine_a = {'mode'},
-    lualine_b = {'branch'},
+    lualine_b = {
+      {
+        'branch',
+        icon = '',
+        color = {fg = colors.violet, gui = 'bold'}
+      }
+    },
     lualine_c = {},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},
@@ -82,7 +88,7 @@ ins_left {
 ins_left{
   'diff',
   colored = true,
-  symbols = {added = ' ', modified = '柳 ', removed = ' '},
+  symbols = {added = '+', modified = '~', removed = '-'},
   color_added = colors.green,
   color_modified = colors.orange,
   color_removed = colors.red,
